@@ -18,7 +18,7 @@ const pushed = ref(false)
 
 const audio = new Audio("/buzzer.wav")
 audio.preload = "auto"
-
+ 
 const startBuzzer = async () => {
   if (!pushed.value && audio.paused) { // Only play if not already playing
     pushed.value = true
