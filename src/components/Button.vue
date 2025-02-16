@@ -16,7 +16,7 @@ import { ref, onMounted, watch } from 'vue'
 const { isSupported, request, release } = useWakeLock()
 const pushed = ref(false)
 
-const audio = new Audio("/buzzer.wav")
+const audio = new Audio("/buzzer/buzzer.wav")
 audio.preload = "auto"
 
 const startBuzzer = async () => {
